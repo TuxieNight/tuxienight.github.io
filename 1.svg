@@ -1,0 +1,16 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Draw a line at the vertical center -->
+    <line x1="0" y1="50" x2="100" y2="50" stroke="black" stroke-width="0.5" />
+    <!-- Draw a line at the horizontal center -->
+    <line x1="50" y1="0" x2="50" y2="100" stroke="black" stroke-width="0.5" />
+
+    <!-- Draw a lens at the horizontal (Center: x1=50 and x2=50 and y1=25 and y2=75) -->    
+    <defs>
+        <path id = "leftCurve" d="M 0 -35 C -5, -12.5 -5, 12.5 0, 35" fill="none" stroke="black" stroke-width="0.5" />
+    </defs>
+        <!-- LEFT -->
+        <use href="#leftCurve" transform="translate(50, 50)" />
+        <!-- RIGHT -->
+        <use href="#leftCurve" transform="translate(50, 50) scale(-1, 1)" />
+
+</svg>
