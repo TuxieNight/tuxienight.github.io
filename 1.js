@@ -195,8 +195,10 @@ if (canvas.getContext) {
             return;
         }
 
-        // make the checkbox uncheckable
+        // make the checkboxes uncheckable
         getRay.disabled = true;
+        oToF.disabled = true;
+        oTo2F.disabled = true;
         // make the slider unmovable
         slider.disabled = true;
 
@@ -238,8 +240,15 @@ if (canvas.getContext) {
                 // restore the save in draw that is unreachable due to returning
                 ctx.restore();
 
-                // make the checkbox checkable now that the light ray is drawn
+                // make the checkboxes checkable now that the light ray is drawn
                 getRay.disabled = false;
+                // only make point-related checkboxes checkable if the other is not checked
+                if(!oToF.checked) {
+                    oTo2F.disabled = false; 
+                }
+                if(!oTo2F.checked) {
+                    oToF.disabled = false;
+                }
                 // make the slider movable now that the light ray is drawn (if o = f not checked)
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
@@ -276,8 +285,15 @@ if (canvas.getContext) {
                 // restore the save in draw that is unreachable due to returning
                 ctx.restore();
 
-                // make the checkbox checkable now that the light ray is drawn
+                // make the checkboxes checkable now that the light ray is drawn
                 getRay.disabled = false;
+                // only make point-related checkboxes checkable if the other is not checked
+                if(!oToF.checked) {
+                    oTo2F.disabled = false; 
+                }
+                if(!oTo2F.checked) {
+                    oToF.disabled = false;
+                }
                 // make the slider movable now that the light ray is drawn (if o = f not checked)
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
@@ -315,8 +331,15 @@ if (canvas.getContext) {
                 // restore the save in draw that is unreachable due to returning
                 ctx.restore();
 
-                // make the checkbox checkable now that the light ray is drawn
+                // make the checkboxes checkable now that the light ray is drawn
                 getRay.disabled = false;
+                // only make point-related checkboxes checkable if the other is not checked
+                if(!oToF.checked) {
+                    oTo2F.disabled = false; 
+                }
+                if(!oTo2F.checked) {
+                    oToF.disabled = false;
+                }
                 // make the slider movable now that the light ray is drawn (if o = f not checked)
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
@@ -819,4 +842,4 @@ if (canvas.getContext) {
 
 } 
 
-console.log("page 1 js loaded")
+console.log("page loaded")
