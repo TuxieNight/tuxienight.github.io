@@ -26,7 +26,9 @@
     <br><br>
     To make o = f or o = 2f, it is easiest to click the corresponding checkbox, because it is hard to set o to exactly f and 2f using the slider. If these checkboxes are clicked, they must be unclicked to be able to access the slider again.
     <br><br>
-    If the "Get Light Ray" checkbox is checked, there will be an animation that draws the three easy rays. Additionally, the object's position will only be updated once the user is finished moving the slider rather than updating while the user is moving the slider, to avoid animation lag. 
+    If the "Get Light Ray" checkbox is checked, there will be an animation that draws the three easy rays. Until this animation is completed, all of the other features are disabled to mitigate bugs. Additionally, the object's position will only be updated once the user is finished moving the slider rather than updating while the user is moving the slider, to avoid animation lag. In the animation, solid lines are real rays and dotted lines are virtual rays.
+    <br><br>
+    If you get the message that the image is too far away for the light rays to be drawn, it is because the amount of time it takes for the animated light rays to reach the image would be unbearably long for most users.
     <br><br>
     <h2>Some things you can do to verify my program follows the laws of physics:</h2>
     <list>
