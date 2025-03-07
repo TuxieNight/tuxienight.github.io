@@ -26,16 +26,16 @@
     <br><br>
     To make o = f or o = 2f, it is easiest to click the corresponding checkbox, because it is hard to set o to exactly f and 2f using the slider. If these checkboxes are clicked, they must be unclicked to be able to access the slider again.
     <br><br>
-    If the "Get Light Ray" checkbox is checked, there will be an animation that draws the three easy rays. Until this animation is completed, all of the other features are disabled to mitigate bugs. Additionally, the object's position will only be updated once the user is finished moving the slider rather than updating while the user is moving the slider, to avoid animation lag. In the animation, solid lines are real rays and dotted lines are virtual rays.
+    If the "Get Light Ray" checkbox is checked, there will be an animation that draws the three easy rays. Until this animation is completed, all of the other features are disabled to avoid glitches. In the animation, solid lines are real rays and dotted lines are virtual rays.
     <br><br>
-    If you get the message that the image is too far away for the light rays to be drawn, it is because the amount of time it takes for the animated light rays to reach the image would be unbearably long for most users.
+    If you get the message that the image is too far away for the light rays to be drawn, it is because the amount of time it takes for the animated light rays to reach the image would be unbearably long for most users. However, even though the image is at infinity when the object is at the focal point, I could optimize the animation for this special case. Thus, the light rays will still be drawn for o = f.
     <br><br>
     <h2>Some things you can do to verify my program follows the laws of physics:</h2>
     <list>
         <li> <b>TLDR: As the object gets closer to the lens, the image gets bigger.</b> </li>
-        <li> When the object is before the left 2F point: the image is smaller, upside down, and on the right side of the lens. </li>
-        <li> When the object is at the left 2F point: the image is at the right 2F point, is upside down, and is the same size as the object.  </li>
-        <li> When the object is after the left 2F point but before the left focal point: the image is bigger, upside down, and on the right side of the lens. </li>
+        <li> When the object is before the left 2F point: the image is smaller, inverted, and on the right side of the lens. </li>
+        <li> When the object is at the left 2F point: the image is at the right 2F point, is inverted, and is the same size as the object.  </li>
+        <li> When the object is after the left 2F point but before the left focal point: the image is bigger, inverted, and on the right side of the lens. </li>
         <li> When the object is at the left focal point: the image is at infinity and will not appear on-screen. </li>
         <li> When the object is after the left focal point: the image is bigger, upright, and on the left side of the lens </li>
     <br><br>

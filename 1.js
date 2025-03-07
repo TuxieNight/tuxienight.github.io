@@ -190,6 +190,9 @@ if (canvas.getContext) {
                 ctx.fillText('The image is too far away to draw the light rays.', -275, -240);
             ctx.restore();
 
+            // uncheck the getRay checkbox
+            getRay.checked = false;
+
             // restore the save in draw that is unreachable due to returning
             ctx.restore();
             return;
@@ -253,6 +256,9 @@ if (canvas.getContext) {
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
                 }
+
+                // uncheck the getRay checkbox
+                getRay.checked = false;
                 return;
             }
         }
@@ -298,6 +304,8 @@ if (canvas.getContext) {
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
                 }
+                // uncheck the getRay checkbox
+                getRay.checked = false;
                 return;
             }
         }
@@ -344,6 +352,8 @@ if (canvas.getContext) {
                 if(!oToF.checked && !oTo2F.checked) {
                     slider.disabled = false; 
                 }
+                // uncheck the getRay checkbox
+                getRay.checked = false;
                 return;
             }
         }
