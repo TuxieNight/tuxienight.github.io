@@ -15,12 +15,6 @@ Information about the class is available on the course web:
 https://pages.graphics.cs.wisc.edu/559-sp25-regular/
 https://pages.graphics.cs.wisc.edu/559-sp25-honors/
 
-The `for_students` sub-directory contains files for the students to read and
-modify. 
-
-The `libs` sub-directory contains libraries used by the workbook. These
-have separate open source licenses provided in the directories. 
-
 The workbook content was primarily developed by Prof. Michael Gleicher with
 assistance from the course staff, including Young Wu, over the years.
 
